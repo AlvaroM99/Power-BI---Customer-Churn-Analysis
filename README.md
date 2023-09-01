@@ -9,7 +9,7 @@
 
 
 ## Dataset
-
+  - Establishing data pathway
 
 
 ## Guiding Questions and Guidelines
@@ -17,6 +17,8 @@
 
 
 ## Data Analysis
+
+### Establishing Data Pathway 
 
 ### 1. Data Connection
 
