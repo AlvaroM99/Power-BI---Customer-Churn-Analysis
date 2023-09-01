@@ -10,10 +10,10 @@
 
 ## Overview
 
-Churn analysis is the evaluation of a company’s customer loss rate in order to reduce it. Churn can be minimized by assessing your product and how people use it. A high churn rate forces a business to compete with the stress of bringing new customers and even slight increases in it can be harmful.
+Churn analysis is the evaluation of a company’s customer loss rate in order to reduce it. Churn can be minimized by assessing your product and how people use it. A high churn rate forces a business to compete with the stress of bringing new customers and even slight increases in it can be harmful. As such, a customer churn data analysis can provide useful insights to make informed decisions and develop future strategies to keep the churn rate at bay.
 
 ## Dataset
-  - Establishing data pathway
+  - Setting data pathway
 
 
 ## Guiding Questions
