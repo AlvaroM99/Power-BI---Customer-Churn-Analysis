@@ -37,7 +37,10 @@ These are the different pieces of information that the bank collects about its c
 
 ### Establishing Data Pathway for Data Connection
 
-Ideally the Power BI dashboard should be uploaded to Power BI Services in order to publish it and for others to consult it. However, my Microsoft 365 account doesn't allow it. Therefore the file is completely uploaded under the .pbix format. The first thing to do if someone wants to consult the data transformation through Power Query Editor is to establish the pathway that Power BI will use to connect to the data source (the csv file uploaded alongside). Wherever the csv file is stored, please copy the location and paste it after clicking Transform Data (Power Query Editor opens up) > Data Source Setting > Change source. Once done click on Refresh Preview and all data with its transformations and preparations must be returned. In Power BI Desktop apply the changes and none of the KPIs ore plots should change.
+To share a Power BI dashboard with others, it's best to upload it to Power BI Services. However, I'm unable to do so due to restrictions on my Microsoft 365 account. Instead, I've uploaded the file in .pbix format. To access the data transformation through Power Query Editor, you'll need to establish the pathway for Power BI to connect to the data source (the uploaded csv file). Simply copy the location of the csv file and paste it after clicking Transform Data. This will open Power Query Editor. From there, go to Data Source Setting and select Change source. Once you've done this, click Refresh Preview to view all the data, transformations, and preparations. In Power BI Desktop, apply the changes and none of the KPIs or plots should change.
+
+![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/b2103f2a-b9e8-4131-b795-6d13cc97cb2b)
+
 
 ### 1. Data Connection
 
