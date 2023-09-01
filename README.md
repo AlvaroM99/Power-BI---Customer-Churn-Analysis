@@ -42,7 +42,8 @@ If you want to share a Power BI dashboard with others, the best way is to upload
 
 ![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/b2103f2a-b9e8-4131-b795-6d13cc97cb2b)
 
-![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/62b0b70b-33a1-4985-9c49-7c1ff51adc3b)
+![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/45d57f4e-c68a-4d73-9474-f0d443d04807)
+
 
 ### 1. Data Connection
 
