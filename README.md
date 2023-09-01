@@ -40,7 +40,8 @@ The aim of this analysis is to create visual representations of important key pe
 
 If you want to share a Power BI dashboard with others, the best way is to upload it to Power BI Services. However, I'm not able to upload it due to restrictions on my Microsoft 365 account. Instead, I've uploaded the file in .pbix format. To access the data transformation through Power Query Editor, you'll need to establish the pathway for Power BI to connect to the data source, which is the uploaded csv file. Save the location of the raw data wherever you store it. First, click on Transform data, which will open Power Query Editor. If the csv file is not found in the established route of the .pbix file, an error will appear. From there, go to Data source settings and select Change source. After doing this, click Refresh preview to view all the data, transformations, and preparations. In Power BI Desktop, apply the changes and none of the KPIs or plots should be altered.
 
-![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/b2103f2a-b9e8-4131-b795-6d13cc97cb2b)
+![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/a16e44ef-1118-41ce-ada0-5a5df99e4613)
+
 
 ![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/45d57f4e-c68a-4d73-9474-f0d443d04807)
 
