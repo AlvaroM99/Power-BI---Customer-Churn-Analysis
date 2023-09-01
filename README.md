@@ -32,15 +32,17 @@ These are the different pieces of information that the bank collects about its c
 
 ## Guiding Questions
 
+The aim of this analysis is to create visual representations of important key performance indicators (KPIs) using data from a bank. In addition to sorting and organizing this data, the focus will be on examining churned customers and the churn rate. These will serve as the dependent variable in most of the visualizations. By comparing multiple factors against the attrition rate (churn rate), we can identify relationships and patterns that will be useful in making decisions and deploying strategies.
 
 ## Data Analysis
 
 ### Establishing Data Pathway for Data Connection
 
-To share a Power BI dashboard with others, it's best to upload it to Power BI Services. However, I'm unable to do so due to restrictions on my Microsoft 365 account. Instead, I've uploaded the file in .pbix format. To access the data transformation through Power Query Editor, you'll need to establish the pathway for Power BI to connect to the data source (the uploaded csv file). Simply copy the location of the csv file and paste it after clicking Transform Data. This will open Power Query Editor. From there, go to Data Source Setting and select Change source. Once you've done this, click Refresh Preview to view all the data, transformations, and preparations. In Power BI Desktop, apply the changes and none of the KPIs or plots should change.
+If you want to share a Power BI dashboard with others, the best way is to upload it to Power BI Services. However, I'm not able to upload it due to restrictions on my Microsoft 365 account. Instead, I've uploaded the file in .pbix format. To access the data transformation through Power Query Editor, you'll need to establish the pathway for Power BI to connect to the data source, which is the uploaded csv file. Save the location of the raw data wherever you store it. First, click on Transform data, which will open Power Query Editor. If the csv file is not found in the established route of the .pbix file, an error will appear. From there, go to Data source settings and select Change source. After doing this, click Refresh preview to view all the data, transformations, and preparations. In Power BI Desktop, apply the changes and none of the KPIs or plots should be altered.
 
 ![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/b2103f2a-b9e8-4131-b795-6d13cc97cb2b)
 
+![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/62b0b70b-33a1-4985-9c49-7c1ff51adc3b)
 
 ### 1. Data Connection
 
