@@ -34,6 +34,10 @@ These are the different pieces of information that the bank collects about its c
 
 The aim of this analysis is to create visual representations of important key performance indicators (KPIs) using data from a bank. In addition to sorting and organizing this data, the focus will be on examining churned customers and the churn rate. These will serve as the dependent variable in most of the visualizations. By comparing multiple factors against the attrition rate (churn rate), we can identify relationships and patterns that will be useful in making decisions and deploying strategies.
 
+- What variables have the biggest impact on Churn Rate?
+- How do they affect our key parameter and each other?
+- Based on the indicators, what strategies can we use to decrease customer loss?
+
 ## Data Analysis
 
 ### Establishing the Data Pathway after downloading the files
@@ -47,11 +51,14 @@ If you want to share a Power BI dashboard with others, the best way is to upload
 
 ### 1. Data Connection
 
-To begin creating a Power BI model, the first step is to connect to the data source. You can do this by going to "Get data" and selecting "Text/CSV." Once you have selected the csv file, a preview of the data table will be displayed. To ensure that the data is clean and properly formatted for analysis, click on "Transform." If the situation were different, you could directly load the data into the model, but that is not the case here.
-
+To begin creating a Power BI model, the first step is to connect to the data source. You can do this by going to "Get data" and selecting "Text/CSV." Once you have selected the csv file, a preview of the data table will be displayed. To ensure that the data is clean and properly formatted for analysis, click on "Transform" and Power Query Editor will open. If the situation was different, you could directly load the data into the model, but that is not the case here since we have raw data.
 
 
 ### 2. Data Wrangling (Cleaning, Formatting & Reshaping)
+
+When using Power BI for data analysis, the Power Query Editor is a powerful tool that can ease the most tedious part of the process, data preparation. To keep track of any changes made to the data, it's important to monitor the "Applied Steps" window located on the right side of the editor. A code command will also be generated in the formula bar in the top. While headers' promotion and data type changes are typically done automatically, the default changes can be removed from the "Applied Steps" window and can be manually adjusted in the home tab. Once the data has been prepared, it's important to search for any non-relevant data, to reduce the dataset as much as possible without missing out on important variables. This is a good practice for any data analyst.
+
+
 
 ### 3. Data Modeling
 
