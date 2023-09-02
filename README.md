@@ -49,26 +49,55 @@ The aim of this analysis is to create visual representations of important key pe
 
 If you want to share a Power BI dashboard with others, the best way is to upload it to Power BI Services. However, I'm not able to do so due to restrictions on my Microsoft 365 account. Instead, I've uploaded the file in .pbix format. To access the data transformation through Power Query Editor, you'll need to establish the pathway for Power BI to connect to the data source, which is the uploaded csv file. Save the location of the raw data wherever you store it. First, click on "Transform data", which will open Power Query Editor. If the csv file is not found in the established route of the .pbix file, an error will appear. From there, go to "Data source settings", select Change source, and paste the csv file location. After doing this, click "Refresh preview" to view all the data, transformations, and preparations. In Power BI Desktop, apply the changes and none of the KPIs or plots should be altered.
 
-![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/a16e44ef-1118-41ce-ada0-5a5df99e4613)
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/a16e44ef-1118-41ce-ada0-5a5df99e4613">
+</p>
 
-
-![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/45d57f4e-c68a-4d73-9474-f0d443d04807)
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/45d57f4e-c68a-4d73-9474-f0d443d04807">
+</p>
 
 </br>
 
 ### 1. Data Connection
 
-To begin creating a Power BI model, the first step is to connect to the data source. You can do this by going to "Get data" and selecting "Text/CSV." Once you have selected the csv file, a preview of the data table will be displayed. To ensure that the data is clean and properly formatted for analysis, click on "Transform" and Power Query Editor will open. If the situation was different, you could directly load the data into the model, but that is not the case here since we have raw data.
+To begin creating a Power BI model, the first step is to connect to the data source. You can do this by going to "Get data" and selecting "Text/CSV." Once you have selected the csv file, a preview of the data table will be displayed. To ensure that the data is clean and properly formatted for analysis, click on "Transform" and Power Query Editor will open. If the data were completely clean and reshaped in the way we need it, you could directly load it into the model, but that is not the case here since we have raw data.
 
 </br>
 
 ### 2. Data Wrangling (Cleaning, Formatting & Reshaping)
 
-When using Power BI for data analysis, the Power Query Editor is a powerful tool that can ease the most tedious part of the process, data preparation. To keep track of any changes made to data, it's important to monitor the "Applied Steps" window located on the right side of the editor. An M code command will also be generated in the formula bar in the top. While headers' promotion and data type changes are typically done automatically, the default changes can be removed from the "Applied Steps" window and can be manually adjusted in the home tab. Once the data has been prepared, it's important to search for any non-relevant data, to reduce the dataset as much as possible without missing out on important variables. This is a good practice for any data analyst.
+When analyzing data with Power BI, the Power Query Editor is a useful tool that can make the data preparation process less tedious. To keep track of any alterations made to the data, it's essential to observe the **"Applied Steps"** window located on the editor's right side. Additionally, an M code command will be generated in the top **formula bar**. Another noteworthy feature is the **"Queries"** window on the left side, where we can obtain data from the main data frame to create smaller tables and continue with the Data Modelling process later on. Although headers' promotion and data type changes are usually automatic, the default changes can be removed from the "Applied Steps" window and manually adjusted in the home tab. After preparing the data, it's crucial to search for any irrelevant information to reduce the dataset as much as possible without missing crucial variables. This is a good habit for any data analyst.
 
-I am going to remove the "estiamted_salary" column since it's a prediction and we already have the account balance data which is more tangible ("balance" column). Then I rewrite the columns' header so they are more meaningful for us when doing the data transformations and data analysis, and for the users when consulting the visualizations. The last step of the preliminary reshaping will be changing the data types. By default they are set in text type (csv file), sometimes we will change it to whole number type, others to fixed decimal number and others it will remain as text type. We do so by clicking on the left side of each column header.
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/bfa63408-d889-4aa6-b960-fe4e902dfbd0">
+</p>
 
+</br>
 
+I will be removing the "estimated_salary" column as it is a prediction and we already have the more tangible "balance" column. After that, I will rename all the columns to make them more descriptive for both data transformations and analysis, as well as for users who view the visualizations. The final step in the preliminary reshaping process will be to change the data types. By default, they are set to text type (csv file), but sometimes we will need to change it to whole number type, fixed decimal number, or leave it as text type. This can be done by clicking on the left side of each column header.
+
+Then I will reshape the "products" column by changing its [1, 2, 3, 4] values by [prod 1, prod 2, prod 3, prod 4], so that it is easier to understand that those four different values are referring to four different products. There are several options to do so, already with the ¨products¨ column selected let's click on "Colum from examples" in the "Add Column" tab. This will add a new column where we can type in "Prod 1" and Power BI will automatically change the 1 value by "Prod 1"; this change of adding the prefix "Prod" will be applied to every single value maintaining the previous number. Once we reviewed that the values are properly reshaped we can give the column a header and get rid of the previous "products" column.
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/20fcbf11-7572-44b0-ae30-9199b0b871c4">
+</p>
+
+</br>
+
+Following with the binary values columns, that is "Credit card", "Active member" and " Churn"; I will be replacing the binary values with text values for each column. Again the purpose beneath these changes is legibility. In this case changes can be made by altering the data type of the columns from "whole number" to "text", then we right click the header and go to replace values. It is better to do this technique when we have few different values in the same column. When the dialog window opens we only have to give de value to find and the value to replace it.
+
+  - For the "Credit card" column I renamed it to "Credit Card Status" and replaced the values as follows: [0-Not Owned, 1-Owned]
+  - For the "Active member" column I renamed it to "Activity Status" and replaced the values as follows: [0-Inactive, 1-Active]
+  - For the "Churn" column I renamed it to "Churn Status" and replaces the values as follows: [0-Not Churned, 1-Churned]
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/44f48484-5bff-4cee-8e10-7dd90912a82d">
+</p>
+
+</br>
+
+So the variables we are interested in analyzing when confronted with the churn rate are "Age", "Credit Score" and "Account Balance". First, we will be heading to the "View" tab where we can click on "Column profile". This will display a simple chart of the column distribution and an overview on the left side of the most important parameters in descriptive statistics, such as the presence of null values, min, max, average, std, and more. Once this is done we can see how many distinct values there are and how do they distribute. When there are a lot of distinct values it's useful and meaningful to categorize the data into some sort of groups or categories, for example: <20, 20-30, 30-40, and so on. To do so we click on "Conditional column" in the "Add column" tab while we have our column of interest selected, this will open the "Add Conditional Column" dialog window where we must set the new column name, the column name from where we are retrieving the data, the operator, value and output. This has to be done for each category or group we want to create and will do so by adding a new clause at the bottom of the opening clause.
 
 ### 3. Data Modeling
 
