@@ -128,7 +128,13 @@ These are the different pieces of information that the bank collects about its c
 
 </br>
 
-We finally obtained the chart with its unique values but we still need to sort them.
+<p align="justify"> We now have the chart with its unique values, but we still need to sort them by creating an index column. One option is to use the "Index column" button (From 1) in the "Add Column" tab. However, we still face an issue because the data type is text. To solve this, I will use the "Conditional Column" technique again. When the dialog window opens, we need to set the same parameters as before. This time, the operator will be "equal," and the range from the "Age Groups" column will be linked to an ID number that corresponds with the "Age Groups" categories' order. The same steps will be applied to the "Account Balance Groups" and "Credit Score Groups" columns. </p>
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/b1316017-3336-4a64-9ca0-dccaa6daf210">
+</p>
+
+</br>
 
 ### 4. Creating new measures with DAX
 
