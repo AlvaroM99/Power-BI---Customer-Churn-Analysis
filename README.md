@@ -49,24 +49,24 @@ If you want to share a Power BI dashboard with others, the best way is to upload
 
 ![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/45d57f4e-c68a-4d73-9474-f0d443d04807)
 
-### 1. Data Connection
+</br>### 1. Data Connection
 
 To begin creating a Power BI model, the first step is to connect to the data source. You can do this by going to "Get data" and selecting "Text/CSV." Once you have selected the csv file, a preview of the data table will be displayed. To ensure that the data is clean and properly formatted for analysis, click on "Transform" and Power Query Editor will open. If the situation was different, you could directly load the data into the model, but that is not the case here since we have raw data.
 
 
-### 2. Data Wrangling (Cleaning, Formatting & Reshaping)
+</br>### 2. Data Wrangling (Cleaning, Formatting & Reshaping)
 
 When using Power BI for data analysis, the Power Query Editor is a powerful tool that can ease the most tedious part of the process, data preparation. To keep track of any changes made to the data, it's important to monitor the "Applied Steps" window located on the right side of the editor. A code command will also be generated in the formula bar in the top. While headers' promotion and data type changes are typically done automatically, the default changes can be removed from the "Applied Steps" window and can be manually adjusted in the home tab. Once the data has been prepared, it's important to search for any non-relevant data, to reduce the dataset as much as possible without missing out on important variables. This is a good practice for any data analyst.
 
 
 
-### 3. Data Modeling
+</br>### 3. Data Modeling
 
-### 4. Creating new measures with DAX
+</br>### 4. Creating new measures with DAX
 
-### 5. Data Visualization & Dashboard Customization
+</br>### 5. Data Visualization & Dashboard Customization
 
-### 6. Save & Publish Report to Power BI Service
+</br>### 6. Save & Publish Report to Power BI Service
 
 
 ## Conclusions
