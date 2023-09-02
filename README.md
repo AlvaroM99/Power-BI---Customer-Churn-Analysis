@@ -1,5 +1,8 @@
 # Power BI - End to End Customer Churn Analysis
 </br>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/11e31663-fae6-49ff-947c-ead86214b4e5">
+</p>
 
 ## Index
 
