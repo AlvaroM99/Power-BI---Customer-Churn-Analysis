@@ -136,7 +136,17 @@ These are the different pieces of information that the bank collects about its c
 
 </br>
 
+<p align="justify"> After completing the data preparation and modeling, we need to click on the "Close & Apply" button. This will close the Power Query Editor and apply all the transformations to the dataset. The updated dataset will be uploaded to the Power BI model in the Power BI Desktop window. However, we still need to review the data relationships of the data model. To do this, we need to go to the "Model View" tab on the right side of the workspace in Power BI Desktop. Here, we can edit and view the relationships between charts. Power BI has already set the "... Groups" charts as lookup tables, which reference the main table "Customer Data" in some of their columns. </p>
+
+<p align="center" width="100%">
+    <img width="65%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/fe2391cc-b95b-430c-928a-6355e691d9ce">
+</p>
+
+</br>
+
 ### 4. Creating new measures with DAX
+
+
 
 ### 5. Data Visualization & Dashboard Customization
 
