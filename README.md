@@ -1,4 +1,5 @@
 # Power BI - End to End Customer Churn Analysis
+</br>
 
 ## Index
 
@@ -7,10 +8,13 @@
 - [Guiding Questions](https://github.com/AlvaroM99/Power-BI---Customer-Churn-Analysis#guiding-questions)
 - [Data Analysis](https://github.com/AlvaroM99/Power-BI---Customer-Churn-Analysis#data-analysis)
 - [Conclusions](https://github.com/AlvaroM99/Power-BI---Customer-Churn-Analysis#conclusions) 
+</br>
 
 ## Overview
 
 The process of churn analysis involves examining the frequency at which a company's customers stop using their services. By assessing the product and how it is used, businesses can minimize churn. High churn rates put pressure on a company to constantly acquire new customers, and even small increases in churn can be detrimental. Customer churn data analysis provides valuable insights for making informed decisions and developing strategies to prevent further churn.
+
+</br>
 
 ## Dataset
 
@@ -28,7 +32,7 @@ These are the different pieces of information that the bank collects about its c
 - Active Member: This is a binary value indicating whether the client is an active member of the bank or not.
 - Estimated Salary: This is an estimated annual salary for the client.
 - Churn: This is a binary value indicating whether the client is still a client of the bank or not.
-
+</br>
 
 ## Guiding Questions
 
@@ -37,6 +41,7 @@ The aim of this analysis is to create visual representations of important key pe
 - What variables have the biggest impact on Churn Rate?
 - How do they affect our key parameter and each other?
 - Based on the indicators, what strategies can we use to decrease customer loss?
+</br>
 
 ## Data Analysis
 
@@ -48,15 +53,20 @@ If you want to share a Power BI dashboard with others, the best way is to upload
 
 
 ![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/45d57f4e-c68a-4d73-9474-f0d443d04807)
+
 </br>
+
 ### 1. Data Connection
 
 To begin creating a Power BI model, the first step is to connect to the data source. You can do this by going to "Get data" and selecting "Text/CSV." Once you have selected the csv file, a preview of the data table will be displayed. To ensure that the data is clean and properly formatted for analysis, click on "Transform" and Power Query Editor will open. If the situation was different, you could directly load the data into the model, but that is not the case here since we have raw data.
 
 </br>
+
 ### 2. Data Wrangling (Cleaning, Formatting & Reshaping)
 
-When using Power BI for data analysis, the Power Query Editor is a powerful tool that can ease the most tedious part of the process, data preparation. To keep track of any changes made to the data, it's important to monitor the "Applied Steps" window located on the right side of the editor. A code command will also be generated in the formula bar in the top. While headers' promotion and data type changes are typically done automatically, the default changes can be removed from the "Applied Steps" window and can be manually adjusted in the home tab. Once the data has been prepared, it's important to search for any non-relevant data, to reduce the dataset as much as possible without missing out on important variables. This is a good practice for any data analyst.
+When using Power BI for data analysis, the Power Query Editor is a powerful tool that can ease the most tedious part of the process, data preparation. To keep track of any changes made to data, it's important to monitor the "Applied Steps" window located on the right side of the editor. An M code command will also be generated in the formula bar in the top. While headers' promotion and data type changes are typically done automatically, the default changes can be removed from the "Applied Steps" window and can be manually adjusted in the home tab. Once the data has been prepared, it's important to search for any non-relevant data, to reduce the dataset as much as possible without missing out on important variables. This is a good practice for any data analyst.
+
+I am going to remove the "estiamted_salary" column since it's a prediction and we already have the account balance data which is more tangible ("balance" column). Then I rewrite the columns' header so they are more meaningful for us when doing the data transformations and data analysis, and for the users when consulting the visualizations. The last step of the preliminary reshaping will be changing the data types. By default they are set in text type (csv file), sometimes we will change it to whole number type, others to fixed decimal number and others it will remain as text type. We do so by clicking on the left side of each column header.
 
 
 
