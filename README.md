@@ -77,7 +77,7 @@ When analyzing data with Power BI, the Power Query Editor is a useful tool that 
 
 I will be removing the "estimated_salary" column as it is a prediction and we already have the more tangible "balance" column. After that, I will rename all the columns to make them more descriptive for both data transformations and analysis, as well as for users who view the visualizations. The final step in the preliminary reshaping process will be to change the data types. By default, they are set to text type (csv file), but sometimes we will need to change it to whole number type, fixed decimal number, or leave it as text type. This can be done by clicking on the left side of each column header.
 
-Then I will reshape the "products" column by changing its [1, 2, 3, 4] values by [prod 1, prod 2, prod 3, prod 4], so that it is easier to understand that those four different values are referring to four different products. There are several options to do so, already with the ¨products¨ column selected let's click on "Colum from examples" in the "Add Column" tab. This will add a new column where we can type in "Prod 1" and Power BI will automatically change the 1 value by "Prod 1"; this change of adding the prefix "Prod" will be applied to every single value maintaining the previous number. Once we reviewed that the values are properly reshaped we can give the column a header and get rid of the previous "products" column.
+I can help make the "products" column easier to understand by changing its values of [1, 2, 3, 4] to [prod 1, prod 2, prod 3, prod 4]. To do this, we can select the "products" column and click on "Column from examples" in the "Add Column" tab. This will create a new column where we can input "Prod 1" and Power BI will automatically change the 1 value to "Prod 1". This prefix change will be applied to all values while maintaining their previous number. Once we confirm that the values are correctly reshaped, we can give the column a header and remove the previous "products" column.
 
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/20fcbf11-7572-44b0-ae30-9199b0b871c4">
@@ -85,7 +85,7 @@ Then I will reshape the "products" column by changing its [1, 2, 3, 4] values by
 
 </br>
 
-Following with the binary values columns, that is "Credit card", "Active member" and " Churn"; I will be replacing the binary values with text values for each column. Again the purpose beneath these changes is legibility. In this case changes can be made by altering the data type of the columns from "whole number" to "text", then we right click the header and go to replace values. It is better to do this technique when we have few different values in the same column. When the dialog window opens we only have to give de value to find and the value to replace it.
+In order to improve readability, I will be replacing the binary values in the "Credit card", "Active member", and "Churn" columns with text values. To do this, I will change the data type of the columns from "whole number" to "text". Then, by right-clicking the header and selecting "replace values", I can easily make the changes. This technique works best when there are only a few different values in the same column. When the dialog window appears, I simply need to input the value to find and the value to replace it with.
 
   - For the "Credit card" column I renamed it to "Credit Card Status" and replaced the values as follows: [0-Not Owned, 1-Owned]
   - For the "Active member" column I renamed it to "Activity Status" and replaced the values as follows: [0-Inactive, 1-Active]
@@ -97,7 +97,21 @@ Following with the binary values columns, that is "Credit card", "Active member"
 
 </br>
 
-So the variables we are interested in analyzing when confronted with the churn rate are "Age", "Credit Score" and "Account Balance". First, we will be heading to the "View" tab where we can click on "Column profile". This will display a simple chart of the column distribution and an overview on the left side of the most important parameters in descriptive statistics, such as the presence of null values, min, max, average, std, and more. Once this is done we can see how many distinct values there are and how do they distribute. When there are a lot of distinct values it's useful and meaningful to categorize the data into some sort of groups or categories, for example: <20, 20-30, 30-40, and so on. To do so we click on "Conditional column" in the "Add column" tab while we have our column of interest selected, this will open the "Add Conditional Column" dialog window where we must set the new column name, the column name from where we are retrieving the data, the operator, value and output. This has to be done for each category or group we want to create and will do so by adding a new clause at the bottom of the opening clause.
+When looking at churn rate, it might be interesting to analyze the variables of "Age", "Credit Score", and "Account Balance". To do this, we can go to the "View" tab and select "Column profile". This will show us a chart of the column distribution and important parameters in descriptive statistics such as null values, min, max, average, std, and more on the left side. 
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/a1379299-d3ae-4cd4-a15b-8f6653f1eef0">
+</p>
+
+After completing the previous task, we can determine the number of unique values and their distribution. If there are numerous distinct values, it can be helpful and meaningful to classify the data into groups or categories such as <20, 20-30, 30-40, etc. To achieve this, we need to select our column of interest and click on "Conditional column" in the "Add column" tab. This will launch the "Add Conditional Column" dialog window where we must specify the new column name, the data source column name, the operator, value, and output for each category we want to generate. We should repeat this process for every category we intend to create using a new clause each time.
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/a5ce365b-0dfc-4ff2-b9bc-a38cc09307fe">
+</p>
+
+</br>
+
+
 
 ### 3. Data Modeling
 
