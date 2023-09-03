@@ -174,7 +174,8 @@ Let's start by creating some simple card graphs where we are going to paste the 
 
 The customization of the chart, adding effects, formatting its properties, legend, title, slices, ticks, and labels; can be done in the "Visualization" tab, while having selected the chart of interest, by going to "Format your visual" tab located right next to "Add data to your visual". This tab will display two new tabs (Visual and General) where we can customize every single aspect of the selected chart.
 
-![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/f869e454-854b-4189-b6e8-b1ceb09ccd9c)
+![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/5a30b256-fb4d-4c6a-80c2-82ddcc5ccb62)
+
 
 
 ### 6. Save & Publish Report to Power BI Service
