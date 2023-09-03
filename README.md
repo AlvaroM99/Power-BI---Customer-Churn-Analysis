@@ -149,9 +149,24 @@ These are the different pieces of information that the bank collects about its c
 
 ### 4. Creating new measures with DAX
 
+<p align="justify"> In order to build some of the graphs new measures needs to be added into the "Customer Data" chart, to build those formulas we will be using DAX. DAX is a collection of functions, operators, and constants also present in Excel that can be used in a formula or expression to calculate and return one or more values, in this case new measures (variables). A new calculation is created by right-clicking on the "Customer Data" chart and pressing "New measure". The calculations we are going to add are: Number of customers (Σ), Customers Lost, and Churn Rate. The DAX formulas for each calculation are the following:</p>
+
+- Number of Customers = COUNT('Transformed Costumer Data'[Customer ID])
+  
+- <p align="justify"> Customers Lost = CALCULATE(COUNT('Transformed Costumer Data'[Churn Status]),'Transformed Costumer Data'[Churn Status] = "Churned"). // The CALCULATE( ) function allows us to execute another function, COUNT( ), if a given condition is fulfilled, the customer being labeled as "Churned" in the "Churn Status" column.</p>
+
+- Churn Rate = [Customers Lost] / [Customers]
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/7c54b4cf-3768-462b-9991-ad97dfc182f0">
+</p>
+
+</br>
 
 
 ### 5. Data Visualization & Dashboard Customization
+
+
 
 ### 6. Save & Publish Report to Power BI Service
 
