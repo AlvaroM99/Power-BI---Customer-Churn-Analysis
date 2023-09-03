@@ -166,6 +166,15 @@ These are the different pieces of information that the bank collects about its c
 
 ### 5. Data Visualization & Dashboard Customization
 
+Although competency has increased and Tableau has begun to bounce into this market with force thanks to the easier graph creation and cleaner and more beautiful dashboards, when it comes to data visualization Power BI can still build powerful dashboards and with little more time we can obtain dashboards as beautiful as those made with Tableau. The main advantage of Power BI is its very powerful Power Query Editor which we have seen before and the idea that you can work on all the steps of Data Analysis in one single program.
+
+Let's start by creating some simple card graphs where we are going to paste the "Number of Customers" and "Churn Rate" measures. This kind of graph is more like KPIs, they are meant to display dynamic data not a distribution, nor a relationship between various variables. Then I will insert 5 donut charts to gain some insights of data in terms of what distribution is there between genders, different locations, activity status, credit card status, and products purchased. These graphs are a little more complicated than the card ones, so, we will have to set "Number of Customers" as the values and "Gender", or whatever parameter's distribution we want to know, as legend. To do this we must first select the donut chart which will appear empty, then drag the variables or measures from the data tab on the right side into the "Values" field or "Legend" field located in the "Add data to your visual" tab within the "Visualizations" tab right next to the "Data" tab.
+
+![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/6a86b3df-9324-4144-beb6-5f0d72ac32ac)
+
+The customization of the chart, adding effects, formatting its properties, legend, title, slices, ticks, and labels; can be done in the "Visualization" tab, while having selected the chart of interest, by going to "Format your visual" tab located right next to "Add data to your visual". This tab will display two new tabs (Visual and General) where we can customize every single aspect of the selected chart.
+
+![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/f869e454-854b-4189-b6e8-b1ceb09ccd9c)
 
 
 ### 6. Save & Publish Report to Power BI Service
