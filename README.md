@@ -7,9 +7,20 @@
 ## Index
 
 - [Overview](https://github.com/AlvaroM99/Power-BI---Customer-Churn-Analysis#overview)
+  
 - [Dataset](https://github.com/AlvaroM99/Power-BI---Customer-Churn-Analysis#dataset)
+  
 - [Guiding Questions](https://github.com/AlvaroM99/Power-BI---Customer-Churn-Analysis#guiding-questions)
+  
 - [Data Analysis](https://github.com/AlvaroM99/Power-BI---Customer-Churn-Analysis#data-analysis)
+  - [Establishing the Data Pathway after downloading the files](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis#establishing-the-data-pathway-after-downloading-the-files)
+  - [Data Connection](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis#1-data-connection)
+  - [Data Wrangling (Cleaning, Formatting & Reshaping)](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis#2-data-wrangling-cleaning-formatting--reshaping)
+  - [Data Modeling](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis#3-data-modeling)
+  - [Creating new measures with DAX](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis#4-creating-new-measures-with-dax)
+  - [Data Visualization & Dashboard Customization](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis#5-data-visualization--dashboard-customization)
+  - [Save & Publish Report to Power BI Service](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis#6-save--publish-report-to-power-bi-service)
+    
 - [Conclusions](https://github.com/AlvaroM99/Power-BI---Customer-Churn-Analysis#conclusions) 
 </br>
 
