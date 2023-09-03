@@ -153,7 +153,7 @@ These are the different pieces of information that the bank collects about its c
 
 - Number of Customers = COUNT('Transformed Costumer Data'[Customer ID])
   
-- <p align="justify"> Customers Lost = CALCULATE(COUNT('Transformed Costumer Data'[Churn Status]),'Transformed Costumer Data'[Churn Status] = "Churned"). // The CALCULATE( ) function allows us to execute another function, COUNT( ), if a given condition is fulfilled, the customer being labeled as "Churned" in the "Churn Status" column.</p>
+- <p align="justify"> Customers Lost = CALCULATE(COUNT('Transformed Costumer Data'[Churn Status]),'Transformed Costumer Data'[Churn Status] = "Churned"). // The CALCULATE( ) function allows us to execute another function, COUNT( ), if a given condition is fulfilled, the customer labeled as "Churned" in the "Churn Status" column.</p>
 
 - Churn Rate = [Customers Lost] / [Customers]
 
@@ -170,7 +170,7 @@ These are the different pieces of information that the bank collects about its c
 
 I will implement 4 types of charts:
 
-- Card chart: It works as a kpi.
+- Card chart: It works as a KPI.
 
 - Donut chart: It's a powerful plot to see distributions.
 
@@ -220,11 +220,11 @@ I will implement 4 types of charts:
 
 </br>
 
-
-
-
 ### 6. Save & Publish Report to Power BI Service
 
+Before publishing your dashboard, ensure that you save your work on your computer. To publish, sign up or log in and then click the "Publish" button on the "Home" tab. Typically, you'll upload your work to your workspace, which will load it into the Power BI Service app/browser. From there, you can export your dashboard, share it, and allow others to interact with it without making any alterations.
+
+</br>
 
 ## Conclusions
 
@@ -233,12 +233,3 @@ Mint 53
 
 
 
-
-
-
-
-
-
-
-
-## DOCUMENTATION IN PROGRESS
