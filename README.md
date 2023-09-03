@@ -149,7 +149,7 @@ These are the different pieces of information that the bank collects about its c
 
 ### 4. Creating new measures with DAX
 
-<p align="justify"> In order to build some of the graphs new measures needs to be added into the "Customer Data" chart, to build those formulas we will be using DAX. DAX is a collection of functions, operators, and constants also present in Excel that can be used in a formula or expression to calculate and return one or more values, in this case new measures (variables). A new calculation is created by right-clicking on the "Customer Data" chart and pressing "New measure". The calculations we are going to add are: Number of customers (Σ), Customers Lost, and Churn Rate. The DAX formulas for each calculation are the following:</p>
+<p align="justify"> To create certain graphs, new measures must be added to the "Customer Data" chart using DAX. DAX is a set of functions, operators, and constants found in Excel that can be utilized to calculate and return new measures (variables). To create a new calculation, right-click on the "Customer Data" chart and select "New measure". The three calculations that will be added are: Number of customers (Σ), Customers Lost, and Churn Rate. The DAX formulas for each calculation are as follows:</p>
 
 - Number of Customers = COUNT('Transformed Costumer Data'[Customer ID])
   
@@ -166,7 +166,7 @@ These are the different pieces of information that the bank collects about its c
 
 ### 5. Data Visualization & Dashboard Customization
 
-Although competency has increased and Tableau has begun to bounce into this market with force thanks to the easier graph creation and cleaner and more beautiful dashboards, when it comes to data visualization Power BI can still build powerful dashboards and with little more time we can obtain dashboards as beautiful as those made with Tableau. The main advantage of Power BI is its very powerful Power Query Editor which we have seen before and the idea that you can work on all the steps of Data Analysis in one single program.
+Power BI is a strong contender in the data visualization market, despite Tableau's recent rise in popularity. While Tableau offers easier graph creation and visually appealing dashboards, Power BI can still create powerful and visually appealing dashboards with a little more effort. One of Power BI's main advantages is its powerful Power Query Editor, which allows users to work on all data analysis steps within one program.
 
 I will implement 4 types of charts:
 
@@ -178,25 +178,47 @@ I will implement 4 types of charts:
 
 - Gauge chart: It can be used in multiple situations, in our case it will act as a graphic representation of the actual churn rate against the target churn rate.
 
-Let's start by creating some simple card graphs where we are going to paste the "Number of Customers" and "Churn Rate" measures. This kind of graph is more like KPIs, they are meant to display dynamic data not a distribution, nor a relationship between various variables. Then I will insert 5 donut charts to gain some insights of data in terms of what distribution is there between genders, different locations, activity status, credit card status, and products purchased. These graphs are a little more complicated than the card ones, so, we will have to set "Number of Customers" as the values and "Gender", or whatever parameter's distribution we want to know, as legend. To do this we must first select the donut chart which will appear empty, then drag the variables or measures from the data tab on the right side into the "Values" field or "Legend" field located in the "Add data to your visual" tab within the "Visualizations" tab right next to the "Data" tab.
+</br>
 
-![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/6a86b3df-9324-4144-beb6-5f0d72ac32ac)
+Let's begin by creating simple card graphs to display dynamic data such as "Number of Customers" and "Churn Rate". These graphs act as KPIs and do not show distribution or relationships between variables. Next, we will insert 5 donut charts to gain insights into data distribution based on gender, location, activity status, credit card status, and purchased products. These graphs are more complex and require selecting "Number of Customers" as the value and selecting the relevant parameter's distribution as the legend, for example, gender. To achieve this, select the donut chart, drag the variables or measures from the "Data" tab on the right into the "Values" or "Legend" field located in the "Add data to your visual" tab within the "Visualizations" tab next to the "Data" tab.
 
-The customization of the chart, adding effects, formatting its properties, legend, title, slices, ticks, and labels; can be done in the "Visualization" tab, while having selected the chart of interest, by going to "Format your visual" tab located right next to "Add data to your visual". This tab will display two new tabs (Visual and General) where we can customize every single aspect of the selected chart. The general dashboard can be also customised throught the "View" tab
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/6a86b3df-9324-4144-beb6-5f0d72ac32ac">
+</p>
 
-![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/af66d8d4-a602-49db-9d0a-ce7767ac4b8e)
+</br>
 
-Now we are going to review the creation of the most intricate chart in this dashboard, the line and clustered column chart. Let's say we want to know the distribution of customers by age groups and how it relates to the churn rate, that is what this chart is meant for, graphing distributions and relationships. I set the chart empty and in the "Add data to your visual" I drag the "Age Groups" from the "Age Groups" table to the "X-axis" field. I'm not using the "Customer Data" table so that I can sort the groups in the chart easily (that was the point of making new tables and adding conditional index columns in the Data Wrangling section). Then I drag the "Number of Customers" measure into the "Column y-axis" field and finally, I do the same for the "Churn Rate" measure in the "Line y-axis" field. The generated chart is unsorted when it comes to the age groups, to solve this let's select the "Ages Groups" column in the "Age Groups" table within the "Data" tab. Once this column and the chart are highlighted we go to the the new "Column Tools" tab, click on "Sort by column" and select "Age Groups ID". This action has sorted the age groups in the table, however, the chart is still unsorted so we go to the top-right of the chart > more options > sort axis > Age groups & Sort ascending. These actions must be performed the same way to plot the customer and churn rate distributions by "Account Balance Groups" and "Credit Score Groups". 
+To customize a chart, select it and go to the "Visualization" tab. Then, click on "Format your visual" located next to "Add data to your visual". This will bring up two new tabs, "Visual" and "General", where you can adjust all aspects of the chart including effects, properties, legend, title, slices, ticks, and labels. Additionally, the general dashboard can be customized through the "View" tab.
 
-![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/15c5d93f-569b-42a5-81b3-517ca169ba4a)
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/af66d8d4-a602-49db-9d0a-ce7767ac4b8e">
+</p>
 
-Finally, we are going to review the construction of the last graph, the gauge chart. For this one we need the actual churn rate value (we have it), maximun and minimum, and the target value. None of the las three values are present in the "Transformed Customer Data" table, hence I will have to add them. We go to the Power Query Editor again and click on "Custom Column" in the "Add column" tab. For each of the three columns, we set the header name, the value, and the data type (percentage). The minimum value is going to be 0, the maximum 1 and the target value will be 0,15. The target churn rate value will differ depending on the business sector, for example, there are not many utility companies so there are few choices and the churn rate is low, thus the target churn rate value must be low as well. Whereas there are a lot of mobile phone providers and people switch around from one another very often, hence the churn rate is high and as such, the target churn rate will be high as well.
+</br>
 
-![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/7c4a2b10-d2a0-41cb-ac16-d613e404f29b)
+Let's take a look at how to create a complex chart in this dashboard - the line and clustered column chart. It's ideal for displaying the distribution of customers by age groups and their corresponding churn rate. To get started, I begin by creating an empty chart and adding data to it. I drag the "Age Groups" from the "Age Groups" table to the "X-axis" field and choose not to use the "Customer Data" table so that I can easily sort the groups in the chart. Next, I drag the "Number of Customers" measure to the "Column y-axis" field and repeat the same for the "Churn Rate" measure in the "Line y-axis" field. However, the generated chart is unsorted when it comes to age groups. To remedy this, I select the "Age Groups" column in the "Age Groups" table within the "Data" tab. After highlighting both the column and the chart, I go to the "Column Tools" tab, click on "Sort by column," and choose "Age Groups ID." This action sorts the age groups in the table but not the chart. To sort the chart, I go to the top-right of the chart, click on "more options," select "sort axis," and choose "Age groups & Sort ascending." These same steps must be taken to plot the customer and churn rate distributions by "Account Balance Groups" and "Credit Score Groups."
 
-After adding headers to the dashboard, switching the charts' properties, colors, distribution of the graphs and adding a background fill made in Power Point; this is the final result in case you can't open the dashboard (the dynamic features of the charts are not available as this is only an image):
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/15c5d93f-569b-42a5-81b3-517ca169ba4a">
+</p>
 
-![image](https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/b2b42094-3a9b-4d64-b5f4-cc9d11cbcfd2)
+</br>
+
+Let's take a look at how to construct the last plot, the gauge chart. To create this graph, we need to have the actual churn rate value, maximum and minimum values, and the target value. However, the last three values are not available in the "Transformed Customer Data" table, so we need to add them. To do this, we will go back to the Power Query Editor and select "Custom Column" under the "Add column" tab. For each of the three columns, we will set the header name, the value, and the data type (percentage). The minimum value will be set at 0, the maximum at 1, and the target value at 0.15. It's important to note that the target churn rate value will vary depending on the business sector. For instance, sectors like utility companies have low churn rates, so the target churn rate value should also be low. On the other hand, sectors like mobile phone providers have high churn rates, so the target churn rate value will be high.
+
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/7c4a2b10-d2a0-41cb-ac16-d613e404f29b">
+</p>
+
+</br>
+
+If you're unable to access the dashboard, here's the final result after adding headers, modifying chart properties, adjusting colors and distribution, and including a Power Point background fill. Please note that the dynamic features of the charts are not available in this image.
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/b2b42094-3a9b-4d64-b5f4-cc9d11cbcfd2">
+</p>
+
+</br>
 
 
 
