@@ -222,7 +222,7 @@ I will implement 4 types of charts:
 
 ### 6. Save & Publish Report to Power BI Service
 
-Before publishing your dashboard, ensure that you save your work on your computer. To publish, sign up or log in and then click the "Publish" button on the "Home" tab. Typically, you'll upload your work to your workspace, which will load it into the Power BI Service app/browser. From there, you can export your dashboard, share it, and allow others to interact with it without making any alterations.
+<p align="justify"> Before publishing your dashboard, ensure that you save your work on your computer. To publish, sign up or log in and then click the "Publish" button on the "Home" tab. Typically, you'll upload your work to your workspace, which will load it into the Power BI Service app/browser. From there, you can export your dashboard, share it, and allow others to interact with it without making any alterations. </p>
 
 </br>
 
