@@ -207,7 +207,7 @@ I will implement 4 types of charts:
 
 </br>
 
-<p align="justify"> Let's take a look at how to create a complex chart in this dashboard - the line and clustered column chart. It's ideal for displaying the distribution of customers by age groups and their corresponding churn rate. To get started, I begin by creating an empty chart and adding data to it. I drag the "Age Groups" from the "Age Groups" table to the "X-axis" field and choose not to use the "Customer Data" table so that I can easily sort the groups in the chart. Next, I drag the "Number of Customers" measure to the "Column y-axis" field and repeat the same for the "Churn Rate" measure in the "Line y-axis" field. However, the generated chart is unsorted when it comes to age groups. To remedy this, I select the "Age Groups" column in the "Age Groups" table within the "Data" tab. After highlighting both the column and the chart, I go to the "Column Tools" tab, click on "Sort by column," and choose "Age Groups ID." This action sorts the age groups in the table but not the chart. To sort the chart, I go to the top-right of the chart, click on "more options," select "sort axis," and choose "Age groups & Sort ascending." These same steps must be taken to plot the customer and churn rate distributions by "Account Balance Groups" and "Credit Score Groups."</p>
+<p align="justify"> Let's take a look at how to create the most complex chart in this dashboard - the line and clustered column chart. It's ideal for displaying the distribution of customers by age groups and their corresponding churn rate. To get started, I begin by creating an empty chart and adding data to it. I drag the "Age Groups" from the "Age Groups" table to the "X-axis" field and choose not to use the "Customer Data" table so that I can easily sort the groups in the chart. Next, I drag the "Number of Customers" measure to the "Column y-axis" field and repeat the same for the "Churn Rate" measure in the "Line y-axis" field. However, the generated chart is unsorted when it comes to age groups. To remedy this, I select the "Age Groups" column in the "Age Groups" table within the "Data" tab. After highlighting both the column and the chart, I go to the "Column Tools" tab, click on "Sort by column," and choose "Age Groups ID." This action sorts the age groups in the table but not the chart. To sort the chart, I go to the top-right of the chart, click on "more options," select "sort axis," and choose "Age groups & Sort ascending." These same steps must be taken to plot the customer and churn rate distributions by "Account Balance Groups" and "Credit Score Groups."</p>
 
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/AlvaroM99/Power-BI---EndtoEnd-Customer-Churn-Analysis/assets/129555669/15c5d93f-569b-42a5-81b3-517ca169ba4a">
@@ -239,8 +239,12 @@ I will implement 4 types of charts:
 
 ## Conclusions
 
-Mint 53
-
+- First of all, the actual churn rate of the bank is surpassing the target churn rate that we decided was suitable for a bank type businness. So there must be something hiding in the data that is enhancing that churn rate.
++ Let's go straight to the line and clustered column charts. In the first one, the customers and churn rate by age groups chart, we can clearly see a disproportionate increase in the churn rate when the customer is aged between 41 and 70. Although in the 41 to 50 stretch there is a significant quantity of customers and the churn rate is high, the main source of income comes from the 31 to 40 group in which the churn rate is relatively low compared with the quantity of customers; thus there's not too mucho to worry about for now. Of course, the churn rate peak in the 51 to 60 group is terrible, however, there's an insignificant amount of customers. We can defenitely spot an issue with the older age groups but we can not conclude anything for now. 
+*
+-
++
+*
 
 
 
