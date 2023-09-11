@@ -239,8 +239,8 @@ I will implement 4 types of charts:
 
 ## Conclusions
 
-- First of all, the actual churn rate of the bank is surpassing the target churn rate that we decided was suitable for a bank type businness. So there must be something hiding in the data that is enhancing that churn rate.
-+ Let's go straight to the line and clustered column charts. In the first one, the customers and churn rate by age groups chart, we can clearly see a disproportionate increase in the churn rate when the customer is aged between 41 and 70. Although in the 41 to 50 stretch there is a significant quantity of customers and the churn rate is high, the main source of income comes from the 31 to 40 group in which the churn rate is relatively low compared with the quantity of customers; thus there's not too mucho to worry about for now. Of course, the churn rate peak in the 51 to 60 group is terrible, however, there's an insignificant amount of customers. We can defenitely spot an issue with the older age groups but we can not conclude anything for now. 
+- <p align="justify"> First of all, the actual churn rate of the bank is surpassing the target churn rate that we decided was suitable for a bank-type business. So there must be something hiding in the data that is enhancing that churn rate. </p>
++ <p align="justify"> Let's go straight to the line and clustered column charts. In the first one, the customers and churn rate by age groups chart, we can clearly see a disproportionate increase in the churn rate when the customer is aged between 41 and 70. Although in the 41 to 50 stretch there is a significant quantity of customers and the churn rate is high, the main source of income comes from the 31 to 40 group in which the churn rate is relatively low compared with the number of customers; thus there's not too much to worry about. Of course, the churn rate peak in the 51 to 60 group is terrible, however, there are even fewer customers than in the stretch before. We can definitely spot an issue with the older age groups but we can not conclude anything for now. </p>
 *
 -
 +
