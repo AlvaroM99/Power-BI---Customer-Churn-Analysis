@@ -241,13 +241,17 @@ I will implement 4 types of charts:
 
 - <p align="justify"> First of all, the actual churn rate of the bank is surpassing the target churn rate that we decided was suitable for a bank-type business. So there must be something hiding in the data that is enhancing that churn rate. </p>
 </br>
+
 + <p align="justify"> Let's go straight to the line and clustered column charts. In the first one, the customers and churn rate by age groups chart, we can clearly see a disproportionate increase in the churn rate when the customer is aged between 41 and 70. Although in the 41 to 50 stretch there is a significant quantity of customers and the churn rate is high, the main source of income comes from the 31 to 40 group in which the churn rate is relatively low compared with the number of customers; thus there's not too much to worry about. Of course, the churn rate peak in the 51 to 60 group is terrible, however, there are even fewer customers than in the stretch before. We can spot an issue with the older age groups but can not conclude anything for now. </p>
 </br>
+
 - <p align="justify"> According to the chart displaying the relationship between customers, churn rate, and credit score groups, it appears that customers who make fewer transactions and use their credit card sparingly are more likely to leave. This tendency could be due to the fact that older customers may not utilize all the benefits of credit cards, such as contactless payments or in-app investments. </p>
 </br>
-- <p align="justify"> The last chart, customers and churn rate by account balance groups, unveils some interesting insights. The customers leaving are either teenagers or university graduates creating new bank accounts or succesful professionals that have amassed a large amount of money. Hence, the bank is not providing taylor-made services for young people who are interested in connectivity, crypto-currency, stocks investment, or trading. Neither is provinding an attentive personalized service for its wealthier customers, which appreciate this the most.  </p>  
+
+- <p align="justify"> In the final chart, we can see that customers with either low or high account balances are more likely to leave the bank. Specifically, the customers leaving are mostly teenagers or university graduates who are opening new bank accounts, as well as successful professionals who have accumulated a significant amount of money. These findings suggest that the bank may not be offering tailored services for young customers who are interested in connectivity, crypto-currency, stock investment, or trading, nor are they providing attentive and personalized service to their wealthier customers who value it most. </p>
 </br>
-+ <p align="justify"> The distillation of the previously stated conclusion leads us to affirm that older customers with higher wealth status are leaving due to a lack of some kind of service that they might consider valuable, so they are moving to specialized banks for rich people. In addition, they are also losing its future customer basis as young people somehow create an account but they aren't able to keep them. </p>
+
++ <p align="justify"> The distillation of the previously stated conclusions leads us to affirm that older customers with higher wealth status are leaving due to a lack of some kind of service that they might consider valuable, so they are moving to specialized banks for rich people. In addition, the bank is also losing its future customer basis as young people somehow create an account but they aren't able to retein them. </p>
 
 
 
